@@ -24,7 +24,7 @@ const customerReducer = (state = initialStateCustomer, action) => {
       return state;
   }
 };
-function createCustomer(fullName, nationalID) {
+export function createCustomer(fullName, nationalID) {
   return {
     type: "customer/createCustomer",
     payload: {
